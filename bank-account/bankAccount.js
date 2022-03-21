@@ -11,6 +11,9 @@ class BankAccount{
   deposit(deposit){
     this.balance += deposit;
   }
+  withdraw(money){
+    this.balance -=money;
+  }
   balance(){
     if(this.accountOpen){
       return this.accountBalance
