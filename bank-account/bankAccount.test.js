@@ -6,12 +6,12 @@ describe('Bank Account', () => {
       account.open();
       expect(account.balance).toEqual(0);
     });
-    // test('can deposit money', () => {
-    //   const account = new BankAccount();
-    //   account.open();
-    //   account.deposit(100);
-    //   expect(account.balance).toEqual(100);
-    // });
+    test('can deposit money', () => {
+      const account = new BankAccount();
+      account.open();
+      account.deposit(100);
+      expect(account.balance).toEqual(100);
+    });
     // test('can deposit money sequentially', () => {
     //   const account = new BankAccount();
     //   account.open();
